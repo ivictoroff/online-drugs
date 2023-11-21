@@ -1,0 +1,120 @@
+
+<DOCTYPE html>
+    <html> 
+        <head><title>OnlineDrugs</title>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+           <link rel="shortcut icon" type="imagex/png" href="/public/img/icon.ico">
+           <style>
+                .alinhar{
+                  display: flex;
+                }
+                
+                .produto{
+                    border: 1px solid #ccc;
+                    padding: 20px;
+                    margin: 5px;
+                    float: left; 
+                    width: 200px; 
+                }
+
+                #rodape {
+                  background-color: #f0f0f0;
+                  padding: 20px;
+                  text-align: center;
+                  position: fixed;
+                  bottom: 0;
+                  width: 100%;
+                }
+             
+            </style> 
+        </head>
+    <body>
+      
+      <header class="flex bg-neutral-950 shadow-xl shadow-slate-400 px-8 py-4 justify-between sticky top-0 z-10"> 
+        <a href="/">
+          <img class="h-16" src="/public/img/icon.png" alt="logo online drugs"/>
+        </a>
+        <div class="text-white flex gap-2 items-end mx-2">
+          <a href="https://www.google.com">
+            <button class="mr-2 text-pink-600"> Sair <i class="fa-solid fa-user"></i></button>
+          </a>
+          <a href="/index.php">
+            <button class="mr-2 text-pink-600"> Log Out <i class="fa-solid fa-user"></i></button>
+          </a>
+        </div>
+      </header>
+      
+      <section>
+        <div class="alinhar">
+          <div class="produto">
+              <img src="/public/img/maconha.png" height ="200px" width="200px" >
+              <center><h2>Maconha</h2></center>
+              <center><p>R$15,00 (g)</p></center>
+              <center>
+                <form action= "/app/Produtos/Maconha.php" method= "post">
+                  <button type="submit" >Comprar</button>
+                </form>
+              </center>
+          </div>
+          <div class="alinhar">
+          <div class="produto">
+             <img src= "/public/img/extase.png" height ="200px" width="200px" />
+              <center><h2>Extase</h2></center>
+              <center><p>R$50,00 (und)</p></center>
+              <center>
+                <form action= "/app/Produtos/Extase.php" method= "post">
+                  <button type="submit" >Comprar</button>
+                </form>
+              </center>
+          </div>
+
+          <div class="alinhar">
+          <div class="produto">
+              <img src="/public/img/LANCA.png" height ="200px" width="200px" >
+              <center><h2>Lança</h2></center>
+              <center><p>R$15,00 (ml)</p></center>
+              <center>
+                <form action= "/app/Produtos/lanca.php" method= "post">
+                  <button type="submit" >Comprar</button>
+                </form>
+              </center>
+          </div>
+          </div>
+        <div class="alinhar">
+          <div class="produto">
+              <img src="/public/img/cocaina.png" height ="200px" width="200px" >
+              <center><h2>Cocaína</h2></center>
+              <center><p>R$40,00 (g)</p></center>
+              <center>
+                <form action= "/app/Produtos/Cocaina.php" method= "post">
+                  <button type="submit" >Comprar</button>
+                </form>
+              </center>
+          </div>
+        </div>
+
+        <div class="alinhar">
+        <div class="produto">
+              <img src="/public/img/PAPEL.png" height ="200px" width="200px" >
+              <center><h2> Papel </h2></center>
+              <center><p>R$25,00 (und)</p></center>
+              <center>
+                <form action= "/app/Produtos/Papel.php" method= "post">
+                  <button type="submit" >Comprar</button>
+                </form>
+              </center>
+        </div>
+        </div>
+      </section>
+
+
+        <footer id="rodape">
+          Site meramente ilustrativo para fins didáticos
+          <br> Thomas Keveen, Victor Araujo e Guilherme Nunes </a> </br>
+          <b><h4>Todos os direitos de estudos reservados. &copy; 2023 Yuri Fialho</h4> </b> 
+        </footer> 
+      <script src="/public/js/script.js"></script>
+   </body>
+</html>  
